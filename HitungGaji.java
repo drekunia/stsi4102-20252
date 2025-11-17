@@ -23,12 +23,12 @@ public class HitungGaji {
     try {
       jamLembur = scanner.nextInt();
       if (jamLembur < 0) {
-        System.out.println("Jam lembur invalid! Tidak menerima bilangan negatif");
+        System.out.println("Jam lembur tidak valid! Tidak menerima bilangan negatif");
         scanner.close();
         return;
       }
     } catch (Exception e) {
-      System.out.println("Jam lembur invalid! Mohon masukkan angka yang benar.");
+      System.out.println("Jam lembur tidak valid! Mohon masukkan angka yang benar.");
       scanner.close();
       return;
     }
@@ -45,7 +45,7 @@ public class HitungGaji {
     } else if (golongan.equals("C")) {
       gajiPokok = 9500000;
     } else {
-      System.out.println("Golongan invalid!");
+      System.out.println("Golongan tidak valid!");
       scanner.close();
       return;
     }
