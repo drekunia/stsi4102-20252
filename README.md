@@ -8,3 +8,8 @@ Silakan cek daftar branch untuk `tugas-2` dan `tugas-3`.
 
 - [Tugas 2 Algoritma dan Pemrograman Universitas Terbuka](https://youtu.be/XN1hutwx5Ms)
 - Tugas 3 Algoritma dan Pemrograman Universitas Terbuka (TO DO)
+
+**Build & Run:**
+
+- Build: `javac HitungGaji.java`
+- Run: `java HitungGaji`
