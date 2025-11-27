@@ -7,7 +7,7 @@ Silakan cek daftar branch untuk `tugas-2` dan `tugas-3`.
 **Link video:**
 
 - [Tugas 2 Algoritma dan Pemrograman Universitas Terbuka](https://youtu.be/XN1hutwx5Ms)
-- Tugas 3 Algoritma dan Pemrograman Universitas Terbuka (TO DO)
+- [Tugas 3 Algoritma dan Pemrograman Universitas Terbuka](https://youtu.be/nAAtKcyozNY)
 
 **Build & Run:**
 
