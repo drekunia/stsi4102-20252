@@ -29,7 +29,7 @@ public class HitungGaji {
     try {
       jamLembur = scanner.nextInt();
       if (jamLembur < 0) {
-        System.out.println("Jam lembur tidak valid! Tidak menerima bilangan negatif");
+        System.out.println("Jam lembur tidak valid! Tidak menerima bilangan negatif.");
         scanner.close();
         return;
       }
