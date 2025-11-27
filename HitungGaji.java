@@ -7,6 +7,12 @@ public class HitungGaji {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
+    // Array Gaji pokok
+    int[] gajiGolongan = { 5000000, 6500000, 9500000 };
+
+    // Array persentase gaji lembur
+    double[] persentaseLembur = { 0.0, 0.30, 0.32, 0.34, 0.36, 0.38 };
+
     // Input
     System.out.println("Input golongan (A/B/C): ");
     String golongan = scanner.nextLine().toUpperCase();
@@ -39,11 +45,11 @@ public class HitungGaji {
     // Tentukan gaji pokok tiap golongan
     int gajiPokok = 0;
     if (golongan.equals("A")) {
-      gajiPokok = 5000000;
+      gajiPokok = gajiGolongan[0];
     } else if (golongan.equals("B")) {
-      gajiPokok = 6500000;
+      gajiPokok = gajiGolongan[1];
     } else if (golongan.equals("C")) {
-      gajiPokok = 9500000;
+      gajiPokok = gajiGolongan[2];
     } else {
       System.out.println("Golongan tidak valid!");
       scanner.close();
@@ -53,17 +59,11 @@ public class HitungGaji {
     // Hitung gaji lembur berdasarkan jamLemburBulat
     double gajiLembur = 0;
     if (jamLemburBulat <= 0) {
-      gajiLembur = 0;
-    } else if (jamLemburBulat == 1) {
-      gajiLembur = .30 * gajiPokok;
-    } else if (jamLemburBulat == 2) {
-      gajiLembur = .32 * gajiPokok;
-    } else if (jamLemburBulat == 3) {
-      gajiLembur = .34 * gajiPokok;
-    } else if (jamLemburBulat == 4) {
-      gajiLembur = .36 * gajiPokok;
+      gajiLembur = persentaseLembur[0] * gajiPokok;
     } else if (jamLemburBulat >= 5) {
-      gajiLembur = .38 * gajiPokok;
+      gajiLembur = persentaseLembur[5] * gajiPokok;
+    } else {
+      gajiLembur = persentaseLembur[jamLemburBulat] * gajiPokok;
     }
 
     // hitung total gaji
